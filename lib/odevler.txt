@@ -1,0 +1,43 @@
+Ödevler 
+1. Gün
+- Basit vucüt kitle indeksi
+- Yaş Hesaplayıcı
+- Basit Faiz Hesaplayıcı
+- Sıcaklık Dönüştürücü
+- Basit Zaman Hesaplayıcı
+- Sayı Tahmin Oyunu
+
+2. Gün 
+-   Not Ortalama Hesaplayıcı || Zorluk Derecesi: Kolay 
+    •   Açıklama:  Bir öğrenci sınıfı oluşturun. Öğrencinin farklı derslerdeki notlarını tutun ve not ortalamasını hesaplayan bir method yazın.
+    •   İpuçları:  Öğrencinin adını ve notlarını (bir liste olarak) tutan bir sınıf tanımlayın. ||  Bir method yazarak bu notların ortalamasını hesaplayın ve ekrana yazdırın.
+
+-   Sayı Tahmin Oyunu || Zorluk Derecesi: Kolay - Orta
+	•	Açıklama: Rastgele bir sayı oluşturup kullanıcının bu sayıyı tahmin etmesini sağlayan bir oyun yapın.
+	•	İpuçları: Rastgele bir sayı üretmek için Random() sınıfını kullanın. || Kullanıcıya tahmin yaptırarak her tahminin ardından daha büyük ya da daha küçük olduğunu söyleyin.
+
+-   Fibonacci Serisi Hesaplayıcı || Zorluk Derecesi: Orta
+	•	Açıklama: Kullanıcıdan bir sayı alarak o sayıya kadar Fibonacci serisini bulan bir uygulama yazın.
+	•	İpuçları: Döngü kullanarak Fibonacci serisini hesaplayın. || Fibonacci serisi: 0, 1, 1, 2, 3, 5, 8, 13, 21… İlk iki sayı 0 ve 1’dir, sonraki her sayı kendisinden önce gelen iki sayının toplamıdır.
+
+-   Ürün Sınıfı ve Sepet Uygulaması || Zorluk Derecesi: Zor
+	•	Açıklama: Bir Ürün sınıfı oluşturun. Bu sınıfın ismi, fiyatı ve stoğu olsun. Ardından, bir Sepet sınıfı oluşturup bu sınıfa ürünler ekleyin ve toplam fiyatı hesaplayan bir method yazın.
+	•	İpuçları: Ürünlerin ismini, fiyatını ve stok miktarını sınıfın özellikleri olarak tutun. || Sepete eklenen ürünlerin toplam fiyatını hesaplayan bir method yazın.
+
+-	Kütüphane Yönetim Sistemi || Zorluk Derecesi: Aşırı Zor 
+	•	Açıklama: Bir kütüphane yönetim sistemi oluşturun. Bu sistemde kitaplar, kullanıcılar ve ödünç alma işlemleri yönetilecek. Kullanıcılar kitap ödünç alabilecek ve belirli bir süre sonra geri getirecekler. Kitapların envanteri düzenli olarak güncellenmeli ve bir kitap ödünç alındığında stoktan düşürülmeli. Geri getirildiğinde ise stok tekrar artırılmalı.
+	•	İpuçları:
+	    •	Kitap Sınıfı: Kitapların adı, yazarı, ISBN numarası ve stok sayısı gibi özellikleri olacak.
+	    •	Kullanıcı Sınıfı: Kullanıcıların adı, üye numarası ve ödünç aldığı kitapların listesi gibi özellikleri olacak.
+	    •	Ödünç Alma Sınıfı: Bir kullanıcının ödünç aldığı kitaplar ve ödünç alma tarihleri tutulacak.
+	•	İşlevler:
+	    •	Kitap Ekle: Yeni kitap ekleme ve kitap stokunu güncelleme.
+	    •	Kitap Arama: ISBN numarası veya kitap adıyla kitap arama.
+	    •	Kitap Ödünç Alma: Bir kullanıcının kitap ödünç almasını sağlayan method. Stok güncellenecek.
+	    •	Kitap İade: Ödünç alınan kitabı geri getirip stoğu artırma.
+	    •	Kitap Stok Kontrolü: Bir kitabın stok durumunu kontrol etme ve stok bitmişse uyarı verme.
+	•	Ekstra Zorluklar:
+	    •	Geç Teslim: Kullanıcı bir kitabı geç getirirse bir ceza ücreti hesaplanacak ve bu kullanıcıya eklenecek.
+	    •	Veri Saklama: Tüm veriler dosya sistemi üzerinde saklanacak ve program kapatılıp açıldığında veri kaybolmayacak. (Dosya okuma/yazma işlemleri)
+	    •	Gelişmiş Arama: Kitaplar yazara, türe veya yayım yılına göre filtrelenebilir olmalı.
+	    •	Kullanıcı Dostu Arayüz: Basit bir CLI (Command Line Interface) arayüzü veya daha zorlu bir proje için Flutter ile grafiksel bir arayüz oluşturulabilir.
