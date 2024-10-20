@@ -1,11 +1,14 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bootcamp/hayvan.dart';
 import 'package:flutter_bootcamp/ogrenci.dart';
+import 'package:flutter_bootcamp/siniflar/araba.dart';
+import 'package:flutter_bootcamp/siniflar/bisiklet.dart';
+import 'package:flutter_bootcamp/soyutlama.dart';
 
 import 'araba.dart';
-
-
+import 'siniflar/ucak.dart';
 
 void main() {
   runApp(const MyApp());
@@ -122,9 +125,9 @@ class MyApp extends StatelessWidget {
     // mehmetOgrenci.bilgiYazdir();
     // mehmetOgrenci.yetiskinMi();
 
-    Araba araba1 = Araba(
-        model: "En son model", renk: "Kırmızı", yil: 2024, sahip: "Mehmet");
-    Araba araba2 = Araba(model: "En son model", renk: "Mavi", yil: 2020);
+    // Araba araba1 = Araba(
+    //     model: "En son model", renk: "Kırmızı", yil: 2024, sahip: "Mehmet");
+    // Araba araba2 = Araba(model: "En son model", renk: "Mavi", yil: 2020);
 
     // void arabalariKarsilastir(Araba ilkAraba, Araba ikinciAraba) {
     //   ilkAraba.renk == ikinciAraba.renk
@@ -155,11 +158,108 @@ class MyApp extends StatelessWidget {
     // log(sonuc);
     // log(yilFarki.toString());
     // log("${sahipleriGetir(araba2)}");
-    String? sahip1 = araba1.sahibiGetir;
-    log("$sahip1  ");
-    araba2.model = "Eski model";
+    // String? sahip1 = araba1.sahibiGetir;
+    // log("$sahip1  ");
+    // araba2.model = "Eski model";
 
-    log("${araba1.modeliGetir}");
+    // log(araba1.modeliGetir);
+
+  ////////////////////////////////// Gün 3 //////////////////////////////
+
+
+
+    // Kedi minik = Kedi("Minik", 3, "Siyah - Beyaz");
+    // minik.sesCikar();
+    // minik.uyu(oda: "Oturma Odası");
+    // Kopek karabas= Kopek("Karabaş", 2);
+    // karabas.sesCikar();
+    // karabas.uyu();
+
+    // Kus kus =Kus();
+
+    // Ucak ucak= Ucak();
+
+    // kus.uc();
+    // ucak.uc();
+
+    // String taklaKus=kus.taklaAt(2);
+    // String taklaUcak= ucak.taklaAt(1);
+
+    // log(taklaKus);
+    // log(taklaUcak);
+
+
+
+
+
+
+      // Kus kus=Kus();
+      // kus.uc();
+      // kus.kon();
+
+      // Ucak ucak =Ucak();
+      // ucak.kon();
+      // ucak.uc();
+
+
+        // log(Ogrenci.okulAdi);
+
+      // Ogrenci.okulAdiniYazdir();
+
+
+
+      Araba araba =Araba("Son Model Araba","Kırmızı",5);
+      araba.motoruCalistir();
+      araba.hareketEt();
+      araba.duraklama();
+      araba.motoruDurdur();
+      log("-----------------------------");
+      Bisiklet bisiklet= Bisiklet(model: "Son Model Bisikler", renk: "Siyah", kacKisi: 2);
+      bisiklet.hareketEt();
+      bisiklet.duraklama();
+      log("-----------------------------");
+      Ucak ucak =Ucak(model: "Son Model Ucak",renk: "Beyaz",kacKisi: 2);
+
+      ucak.motoruCalistir();
+      ucak.hareketEt();
+      ucak.duraklama(); 
+      ucak.motoruDurdur();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     return MaterialApp(
       title: 'Flutter Demo',
@@ -200,29 +300,29 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               TextField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText: "Sayi 1",
                 ),
                 onChanged: (value) {
                   sayi1 = double.tryParse(value) ?? 0;
                 },
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               TextField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText: "Sayi 2",
                 ),
                 onChanged: (value) {
                   sayi2 = double.tryParse(value) ?? 0;
                 },
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Text(sonuc.toString()),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Row(
@@ -234,28 +334,28 @@ class _MyHomePageState extends State<MyHomePage> {
                           sonuc = sayi1 + sayi2;
                         });
                       },
-                      child: Text("Topla")),
+                      child: const Text("Topla")),
                   ElevatedButton(
                       onPressed: () {
                         setState(() {
                           sonuc = sayi1 * sayi2;
                         });
                       },
-                      child: Text("Çarp")),
+                      child: const Text("Çarp")),
                   ElevatedButton(
                       onPressed: () {
                         setState(() {
                           sonuc = sayi1 / sayi2;
                         });
                       },
-                      child: Text("Böl")),
+                      child: const Text("Böl")),
                   ElevatedButton(
                       onPressed: () {
                         setState(() {
                           sonuc = sayi1 - sayi2;
                         });
                       },
-                      child: Text("Çıkart")),
+                      child: const Text("Çıkart")),
                 ],
               )
             ],

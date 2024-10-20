@@ -6,6 +6,13 @@ class Ogrenci {
 
   Ogrenci(this.isim, this.yas);
 
+
+  static String okulAdi= "Anadolu Lisesi";
+
+  static void okulAdiniYazdir(){
+    log("Okul Adı : $okulAdi");
+  }
+
   void bilgiYazdir() {
     log("Ad: $isim  Yaş: ${yas.toString()}");
   }

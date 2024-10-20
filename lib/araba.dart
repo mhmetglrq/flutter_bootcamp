@@ -1,13 +1,13 @@
 import 'dart:developer';
 
-class Araba {
+class ArabaSinifi {
   String _model;
   int _yil;
   String _renk;
   String? _sahip;
 
   // Araba araba = Araba(model: "En son model", renk: "Kırmızı", yil: 2024);
-  Araba(
+  ArabaSinifi(
       {required String model,
       required String renk,
       required int yil,
